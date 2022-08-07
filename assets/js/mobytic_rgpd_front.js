@@ -1,10 +1,3 @@
-if (localStorage.getItem('cookies_enabled') == null) {
-    document.getElementById('mobytic-rgpd').style.display = 'none';
-    
-} else {
-    document.getElementById('mobytic-rgpd').style.display = 'none';
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     // localStorage.setItem('cookies_enabled', '0'); // No cookies
 

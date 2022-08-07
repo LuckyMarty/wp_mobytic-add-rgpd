@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,700&display=swap");
+#mobytic-rgpd-wrapper a {
+  text-decoration: none;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd {
+  z-index: 999999;
+  --rgpd-btn-color-1: #ffdecf;
+  --rgpd-btn-color-2: #8c471a;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15), 0px 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 330px;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 16px;
+  background-color: white;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd > * {
+  font-family: "Rubik", sans-serif;
+}
+@media (max-width: 768px) {
+  #mobytic-rgpd-wrapper #mobytic-rgpd {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: unset;
+    border-radius: 8px 8px 0 0;
+  }
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body {
+  padding: 25px;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header {
+  display: flex;
+  align-items: center;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header .title {
+  flex: 1;
+  margin-top: -50px;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header .title h1#mobytic_rgpd_title {
+  margin: 0;
+  font-family: "Source Serif 4", serif;
+  font-size: 24px;
+  text-align: left !important;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header .title h1#mobytic_rgpd_title span {
+  font-size: 28px;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header .title h1#mobytic_rgpd_title small,
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header .title h1#mobytic_rgpd_title span {
+  display: block;
+  font-family: "Source Serif 4", serif;
+  color: black;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header .img {
+  height: 100px;
+  width: 100px;
+  border-radius: 0 0 0 8px;
+  overflow: hidden;
+  background-image: url("../img/cookie-bites.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: -25px -25px 25px 0;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body p#mobytic_rgpd_p {
+  margin: 0;
+  color: #666666 !important;
+  text-align: left !important;
+  font-family: "Rubik", sans-serif;
+  font-weight: normal !important;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-footer a {
+  border-top: 1px solid rgb(237, 237, 237);
+  border-left: 1px solid rgb(237, 237, 237);
+  background-color: white;
+  padding: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Rubik", sans-serif;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-footer a label {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-footer a:last-child {
+  background-color: var(--rgpd-btn-color-1);
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-footer a:last-child label {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  color: black;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-footer a:last-child:hover {
+  background-color: var(--rgpd-btn-color-2);
+  color: white;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-footer a:last-child:hover label {
+  color: white;
+}
+
+#mobytic-rgpd-wrapper {
+  font-family: "Rubik", sans-serif;
+}
+#mobytic-rgpd-wrapper > * {
+  margin: 0;
+}
+#mobytic-rgpd-wrapper label {
+  cursor: pointer;
+  margin: 0;
+}
+#mobytic-rgpd-wrapper input {
+  display: none;
+}
+#mobytic-rgpd-wrapper label.open {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px 8px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  z-index: 999999;
+  transform: scale3d(1, 1, 1);
+  transform-origin: bottom;
+  transition: transform 0.5s 0.4s cubic-bezier(0.99, 0.04, 0.57, 1.31);
+}
+#mobytic-rgpd-wrapper input[type=checkbox]:checked + label.open {
+  transform: scale3d(0, 0, 0);
+  transition: transform 0.5s 0.5s cubic-bezier(0.99, 0.04, 0.57, 1.31);
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd {
+  opacity: 0;
+  transform: scale3d(0, 0, 0);
+  transform-origin: bottom left;
+  transition: transform 0.5s 0.5s cubic-bezier(0.99, 0.04, 0.57, 1.31), opacity 10s;
+}
+@media (max-width: 768px) {
+  #mobytic-rgpd-wrapper #mobytic-rgpd {
+    transform: scale3d(1, 0, 0);
+    transform-origin: bottom;
+  }
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body-header .title {
+  transform: translate(0, 50%);
+  opacity: 0;
+  transition: transform 0.5s 0.02s cubic-bezier(0.99, 0.04, 0.57, 1.31), opacity 0.5s;
+}
+#mobytic-rgpd-wrapper #mobytic-rgpd .mobytic-rgpd-body p {
+  transform: translate(0, 50%);
+  opacity: 0;
+  transition: transform 0.5s 0.02s cubic-bezier(0.99, 0.04, 0.57, 1.31), opacity 0.5s;
+}
+#mobytic-rgpd-wrapper input[type=checkbox]:checked ~ #mobytic-rgpd {
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.5s 0.4s cubic-bezier(0.99, 0.04, 0.57, 1.31), opacity;
+  opacity: 1;
+}
+#mobytic-rgpd-wrapper input[type=checkbox]:checked ~ #mobytic-rgpd .mobytic-rgpd-body-header .title {
+  transform: translate(0, 0);
+  transition: transform 0.5s 0.6s cubic-bezier(0.99, 0.04, 0.57, 1.31), opacity 0.8s 0.8s;
+  opacity: 1;
+}
+#mobytic-rgpd-wrapper input[type=checkbox]:checked ~ #mobytic-rgpd .mobytic-rgpd-body p {
+  transform: translate(0, 0);
+  transition: transform 0.5s 0.6s cubic-bezier(0.99, 0.04, 0.57, 1.31), opacity 0.8s 0.8s;
+  opacity: 1;
+}/*# sourceMappingURL=mobytic_rgpd_front.css.map */

@@ -1,0 +1,17 @@
+{
+    "name": "mobytic/mobytic-rgpd",
+    "description": "Ajouter une banniere RGPD",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Lucky Marty",
+            "email": "contact@luckymarty.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./inc"}
+    }
+}
